@@ -1,0 +1,86 @@
+/* basic styling */
+body {
+  font-size:15px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #952F29 0%,#2C1703 50%);
+  height: 400px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.30rem;
+  margin: auto;
+}
+
+i {
+  color: #770506;
+}
+
+/* text clipping */
+
+.text {
+  padding-left: 4rem;
+  color:#000000;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.30rem;
+  font-family: 'Roboto Slab', serif;
+  background-size: cover;
+  top: -10rem;
+}
+
+/* sections */
+
+.box {
+  height: 20rem;
+  position: relative;
+  top: -1.2rem;
+  background-size: cover;
+  background-position-y: -4rem;
+}
+
+.content {
+  height: 10rem; 
+  position: relative;
+}
+
+/* vertical text */
+
+.vertical {
+  color: #770506;
+  background: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  padding: 0 1.3rem;
+  margin: 2rem -12.5rem;
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  float: left;
+  z-index: 10000;
+  position:fixed;
+}
+
+/* movement */
+
+p {
+  opacity: 0.0;
+  margin-top: -10rem;
+  transition: opacity 0.5s ease-in-out, margin-top 1.0s ease-in-out;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1.3rem 2rem 0px 4rem;
+  font-family: 'Roboto';
+}
+
+.box:hover > p {
+  opacity: 1.0;
+  margin-top: 0rem;
+}
