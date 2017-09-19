@@ -59,7 +59,6 @@ i {
   font-family: 'Roboto Slab', serif;
   padding: 0 1.3rem;
   margin: 2rem -12.5rem;
-  -ms-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -72,15 +71,16 @@ i {
 
 p {
   opacity: 0.0;
+  margin-bottom: 0;
   margin-top: -10rem;
-  transition: opacity 0.5s ease-in-out, margin-top 1.0s ease-in-out;
+  transition: opacity 1.2s ease-in-out, margin-top 0.8s ease-in-out;
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 1.3rem 2rem 0px 4rem;
   font-family: 'Roboto';
 }
 
-.box:hover > p {
+.box:hover p {
   opacity: 1.0;
   margin-top: 0rem;
 }
