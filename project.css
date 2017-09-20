@@ -31,9 +31,25 @@ p {
   font-family: 'Roboto';
 }
 
+/* sections */
+
+.box, .container {
+  height: 20rem;
+  position: relative;
+  top: -1.2rem;
+  background-size: cover;
+  background-position-y: -4rem;
+}
+
+/* this class acts only to keep the sections separate from the vertical text, without .content, .vertical does not work */
+.content {
+  height: 10rem;
+}
+
+
 /* movement */
 
-.box:hover p {
+.box:hover p, .container:hover p {
   opacity: 1.0;
   margin-top: 0rem;
 }
@@ -48,19 +64,17 @@ p {
   top: -10rem;
 }
 
-/* sections */
+/* flexbox sections */
 
-.box {
-  height: 20rem;
-  position: relative;
-  top: -1.2rem;
-  background-size: cover;
-  background-position-y: -4rem;
+.link {
+
 }
 
-.content {
-  height: 10rem; 
-  position: relative;
+.text-body {
+}
+
+.thumbnail {
+  
 }
 
 /* vertical text */
