@@ -35,10 +35,23 @@ a {
   text-decoration: none;
 }
 
+/* text clipping for heading*/
+
+.text {
+  padding-left: 4rem;
+  color:#000000;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  top: -10rem;
+}
+
 /* sections */
 
-.box {
+.box, .container {
   height: 20rem;
+}
+
+.box {
   position: relative;
   top: -1.2rem;
   background-size: cover;
@@ -47,42 +60,26 @@ a {
 }
 
 .container {
-  height: 20rem;
   margin-top: -10.2rem;
   display:flex;
   transition: box-shadow 1.2s ease-in-out, margin-top 0.8s ease-in-out;
 }
 
-/* this class acts only to keep the sections separate from the vertical text, without .content, .vertical does not work */
-.content {
-  height: 10rem;
-}
-
-
 /* movement */
 
-.box:hover p {
-  opacity: 1.0;
+.box:hover, .container:hover, .box:hover p {
   margin-top: 0rem;
   height:auto;
 }
 
-.box:hover, .container:hover {
-  box-shadow:2px 2px 3px rgba(10, 10, 10, 0.1);
-  z-index:200; 
-  margin-top:0rem;
-  min-height: 20rem;
-  height: auto;
+.box:hover p {
+  opacity: 1.0;
 }
 
-/* text clipping */
-
-.text {
-  padding-left: 4rem;
-  color:#000000;
-  -webkit-text-fill-color: transparent;
-  background-size: cover;
-  top: -10rem;
+.box:hover, .container:hover {
+  box-shadow:2px 2px 3px rgba(10, 10, 10, 0.1);
+  z-index:200;
+  min-height: 16rem;
 }
 
 /* flexbox sections */
@@ -119,4 +116,9 @@ a {
   z-index: 10000;
   position:fixed;
   box-shadow: 3px 3px 4px rgba(10, 10, 10, 0.1);
+}
+
+/* this class acts only to keep the sections separate from the vertical text, without .content, .vertical does not work */
+.content {
+  height: 10rem;
 }
