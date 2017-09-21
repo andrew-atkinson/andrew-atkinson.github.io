@@ -67,16 +67,25 @@ a {
 
 /* movement */
 
-.box:hover, .container:hover, .box:hover p {
+.box:hover, 
+.container:hover, 
+.box:hover p,
+.box:focus, 
+.container:focus, 
+.box:focus p {
   margin-top: 0rem;
   height:auto;
 }
 
-.box:hover p {
+.box:hover p,
+.box:focus p {
   opacity: 1.0;
 }
 
-.box:hover, .container:hover {
+.box:hover, 
+.container:hover,
+.box:focus, 
+.container:focus {
   box-shadow:2px 2px 3px rgba(10, 10, 10, 0.1);
   z-index:200;
   min-height: 16rem;
