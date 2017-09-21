@@ -14,6 +14,7 @@ h2 {
   font-weight: 700;
   letter-spacing: -0.30rem;
   font-family: 'Roboto Slab', sans-serif;
+  opacity: 1.0;
 }
 
 i {
@@ -39,10 +40,10 @@ a {
 
 .text {
   padding-left: 4rem;
-  color:#000000;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color:transparent;
   background-size: cover;
   top: -10rem;
+  height: auto;
 }
 
 /* sections */
@@ -67,22 +68,22 @@ a {
 
 /* movement */
 
-/*.box:hover, 
+.box:hover, 
 .container:hover, 
-.box:hover p, */
+.box:hover p, 
 .boxHover,
 .boxHover p {
   margin-top: 0rem;
   height:auto;
 }
 
-/*.box:hover p,*/
+.box:hover p,
 .boxHover p {
   opacity: 1.0;
 }
 
-/*.box:hover, 
-.container:hover,*/
+.box:hover, 
+.container:hover,
 .boxHover {
   box-shadow:2px 2px 3px rgba(10, 10, 10, 0.1);
   z-index:200;

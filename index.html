@@ -12,11 +12,11 @@
 
 <body>
   <div id="content">
-    <div class="text" style="background: url(img/nimbus.jpg);
-                             background: linear-gradient(transparent, transparent), url(img/nimbus.jpg);
-                             -webkit-background-clip: text;">
-      <h2>NIMBUS, INC</h2>
-    </div>
+    <h2 class="text" style="background: url(img/nimbus.jpg);
+                            background: linear-gradient(transparent, transparent), url(img/nimbus.jpg);
+                            -webkit-background-clip: text;">
+      NIMBUS, INC
+    </h2>
     <div class="box" style="background: url(img/nimbus.jpg);
                             background: linear-gradient(transparent, transparent), url(img/nimbus.jpg); 
                             background-position-y: -4rem;
@@ -42,10 +42,12 @@
         </div>
       </div>
     </div>
-    <div class="text" style="background: url(img/2020logo.jpg);
+    <div class="text">
+      <h2 style="background: url(img/2020logo.jpg);
                              background: linear-gradient(transparent, transparent), url(img/2020logo.jpg);
                              -webkit-background-clip: text;">
-      <h2>TWENTY-TWENTY</h2>
+        TWENTY-TWENTY
+      </h2>
     </div>
     <div class="box" style="background: url(img/2020logo.jpg);
                             background: linear-gradient(transparent, transparent), url(img/2020logo.jpg); 
@@ -68,11 +70,12 @@
       </div>
     </div>
 
-    <div class="text" style="background: url(img/comp-1-esja-4+5.jpg);
-                             background: linear-gradient(transparent, transparent), url(img/comp-1-esja-4+5.jpg);
-                             -webkit-background-clip: text;">
-      <h2>PHOTOGRAPHY</h2>
-    </div>
+
+    <h2 class="text" style="background: url(img/comp-1-esja-4+5.jpg);
+                            background: linear-gradient(transparent, transparent), url(img/comp-1-esja-4+5.jpg);
+                            -webkit-background-clip: text;">
+      PHOTOGRAPHY
+    </h2>
     <div class="box" style="background: url(img/comp-1-esja-4+5.jpg);
                             background: linear-gradient(transparent, transparent), url(img/comp-1-esja-4+5.jpg); 
                             background-position-y: -4rem;">
@@ -91,11 +94,11 @@
         </div>
       </div>
     </div>
-    <div class="text" style="background: url(img/about.jpg);
-                             background: linear-gradient(transparent, transparent), url(img/about.jpg);
-                             -webkit-background-clip: text;">
-      <h2>ABOUT</h2>
-    </div>
+    <h2 class="text" style="background: url(img/about.jpg);
+                            background: linear-gradient(transparent, transparent), url(img/about.jpg);
+                            -webkit-background-clip: text;">
+      ABOUT
+    </h2>
     <div class="box" style="background: url(img/about.jpg);
                             background: linear-gradient(transparent, transparent), url(img/about.jpg); 
                             background-position-y: -4rem;">
@@ -133,18 +136,18 @@
 </body>
 <script>
   const el = document.getElementById('content')
-                     .addEventListener('click',
-                       function (e) {
-                         var idx = 0;
-                         while (e.path[idx].classList[0] !== 'container' && e.path.length - 3 > idx) {
-                           idx++
-                           console.log('e', e.path[idx], 'index:', idx, 'path length', e.path.length)
-                         }
-                       console.log('found it!')
-                       e.path[idx].parentElement.classList.toggle('boxHover')
-                       e.path[idx].classList.toggle('boxHover')
-                      }
-                      )
+    .addEventListener('click',
+    function (e) {
+      var idx = 0;
+      while (e.path[idx].classList[0] !== 'container' && e.path.length - 3 > idx) {
+        idx++
+        console.log('e', e.path[idx], 'index:', idx, 'path length', e.path.length)
+      }
+      console.log('found it!')
+      e.path[idx].parentElement.classList.toggle('boxHover')
+      e.path[idx].classList.toggle('boxHover')
+    }
+    )
   console.log('el', el)
 
 </script>
