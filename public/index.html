@@ -19,6 +19,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300" rel="stylesheet">
     <title>Andrew Atkinson Projects</title>
   </head>
   <body>
@@ -27,4 +29,17 @@
     </noscript>
     <div id="root"></div>
   </body>
+  <script>
+  document.getElementById('content')
+    .addEventListener('click',
+    function (e) {
+      var idx = 0
+      while (e.path[idx].classList[0] !== 'container' && e.path.length - 3 > idx) {
+        idx++
+      }
+      e.path[idx].parentElement.classList.toggle('boxHover')
+      e.path[idx].classList.toggle('containerHover')
+    }
+    )
+</script>
 </html>
