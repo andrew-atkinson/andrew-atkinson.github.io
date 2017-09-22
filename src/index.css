@@ -41,22 +41,19 @@ a {
 .text {
   padding-left: 4rem;
   -webkit-text-fill-color:transparent;
-  background-size: cover;
   top: -10rem;
   height: auto;
 }
 
 /* sections */
 
-.box, .container {
-  min-height: 20rem;
-  padding-bottom: 1rem;
+.container {
+  min-height: 16rem;
 }
 
 .box {
   position: relative;
   top: -1.2rem;
-  background-size: cover;
   background-position-y: -4rem;
   transition: box-shadow 1.2s ease-in-out, margin-top 0.8s ease-in-out, height 0.8s ease-in-out;
 }
@@ -93,7 +90,6 @@ a {
 
 .containerHover {
   margin-top: 0rem;
-  box-shadow:2px 2px 3px rgba(10, 10, 10, 0.1);
   z-index:200;
   min-height: 16rem;
 }
@@ -147,14 +143,14 @@ a {
   }
 
   .boxHover, .box { 
-    background-position-y: -2rem !important;
+    background-position-y: -2rem;
     top: -0.7rem;
     z-index:200;
     height:20rem;
   }
 
   .vertical {
-  font-size: 1.5rem;
-  margin: -1rem -9.6rem;
+    font-size: 1.5rem;
+    margin: -1rem -9.6rem;
   }
 }

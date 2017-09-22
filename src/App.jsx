@@ -9,13 +9,12 @@ class App extends Component {
           <h2 className="text" style={{
             background: 'url(img/nimbus.jpg)',
             backgroundImage: 'url(img/nimbus.jpg)',
-            webkitBackgroundClip: 'text'
+            WebkitBackgroundClip: 'text'
           }}>
             NIMBUS, INC
           </h2>
           <div className="box" style={{
             backgroundImage: 'url(img/nimbus.jpg)',
-            backgroundPositionY: '-4rem',
             color: 'white'
           }}>
             <div className="container">
