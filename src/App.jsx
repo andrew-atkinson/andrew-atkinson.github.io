@@ -7,7 +7,7 @@ class App extends Component {
       <div>
         <div id="content">
           <h2 className="text" style={{
-            background: url(img / nimbus.jpg),
+            background: 'url(img/nimbus.jpg)',
             backgroundImage: 'url(img/nimbus.jpg)',
             webkitBackgroundClip: 'text'
           }}>
