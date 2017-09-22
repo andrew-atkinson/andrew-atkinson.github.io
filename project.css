@@ -156,12 +156,5 @@ a {
   font-size: 1.5rem;
   padding: 0 1.3rem;
   margin: -1rem -9.6rem;
-  -moz-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  float: left;
-  z-index: 10000;
-  position:fixed;
-  box-shadow: 3px 3px 4px rgba(10, 10, 10, 0.1);
   }
 }
