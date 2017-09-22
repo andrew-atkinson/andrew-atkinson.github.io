@@ -134,9 +134,9 @@ a {
   height: 10rem;
 }
 
-/* 600px width breakpoint*/
+/* 740px width breakpoint*/
 
-@media (max-width: 670px) {
+@media (max-width: 740px) {
   .container{ 
     flex-direction: column;
     min-height:10rem;
