@@ -125,7 +125,7 @@ a {
   transform: rotate(90deg);
   float: left;
   z-index: 10000;
-  position:sticky;
+  position:fixed;
   box-shadow: 3px 3px 4px rgba(10, 10, 10, 0.1);
 }
 
@@ -135,11 +135,11 @@ a {
 }
 
 /* 740px width breakpoint*/
-
 @media (max-width: 740px) {
   .container{ 
     flex-direction: column;
-    min-height:10rem;
+    height:20rem;
+    margin-top: -3.2rem;
     }
 
   h2 {
@@ -149,7 +149,8 @@ a {
   .boxHover, .box { 
     background-position-y: -2rem !important;
     top: -0.7rem;
-    height:auto;
+    z-index:200;
+    height:20rem;
   }
 
   .vertical {
