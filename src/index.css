@@ -1,4 +1,8 @@
 /* basic styling */
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-size:15px;
   padding: 0;
@@ -56,12 +60,13 @@ a {
   top: -1.2rem;
   background-position-y: -4rem;
   transition: box-shadow 1.2s ease-in-out, margin-top 0.8s ease-in-out, height 0.8s ease-in-out;
+  padding-bottom: 1rem;
 }
 
 .container {
   margin-top: -10.2rem;
   display:flex;
-  transition: box-shadow 1.2s ease-in-out, margin-top 0.8s ease-in-out;
+  transition: margin-top 0.8s ease-in-out;
 }
 
 /* movement */
@@ -80,8 +85,7 @@ a {
   opacity: 1.0;
 }
 
-.box:hover, 
-.container:hover,
+.box:hover,
 .boxHover {
   box-shadow:2px 2px 3px rgba(10, 10, 10, 0.1);
   z-index:200;
@@ -134,7 +138,7 @@ a {
 @media (max-width: 740px) {
   .container{ 
     flex-direction: column;
-    height:20rem;
+    height:16rem;
     margin-top: -3.2rem;
     }
 
@@ -146,7 +150,7 @@ a {
     background-position-y: -2rem;
     top: -0.7rem;
     z-index:200;
-    height:20rem;
+    height:16rem;
   }
 
   .vertical {
