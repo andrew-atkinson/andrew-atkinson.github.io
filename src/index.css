@@ -119,7 +119,9 @@ section:hover .text,
 
 /* title text */
 
+
 .title {
+
   color: #770506;
   background: #fff;
   font-size: 2rem;
@@ -137,6 +139,8 @@ section:hover .text,
 }
 
 /* this class acts only to keep the sections separate from the title text, without .content, .title does not work */
+
+
 #content {
   height: 10rem;
 }
