@@ -47,6 +47,8 @@ a {
   -webkit-text-fill-color:transparent;
   top: -10rem;
   height: auto;
+  background-position-y: -10.2rem;
+  transition: background-position-y 0.8s ease-in-out;
 }
 
 /* sections */
@@ -98,6 +100,11 @@ a {
   min-height: 16rem;
 }
 
+section:hover .text,
+.textHover {
+  background-position-y: 0rem;
+}
+
 /* flexbox sections */
 
 .link {
@@ -110,9 +117,9 @@ a {
   flex-basis: 85%;
 }
 
-/* vertical text */
+/* title text */
 
-.vertical {
+.title {
   color: #770506;
   background: #fff;
   font-size: 2rem;
@@ -129,7 +136,7 @@ a {
   box-shadow: 3px 3px 4px rgba(10, 10, 10, 0.1);
 }
 
-/* this class acts only to keep the sections separate from the vertical text, without .content, .vertical does not work */
+/* this class acts only to keep the sections separate from the title text, without .content, .title does not work */
 #content {
   height: 10rem;
 }
@@ -154,7 +161,7 @@ a {
     height:16rem;
   }
 
-  .vertical {
+  .title {
     font-size: 1.5rem;
     margin: -1rem -9.6rem;
   }
