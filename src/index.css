@@ -1,4 +1,8 @@
 /* basic styling */
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-size:15px;
   padding: 0;
@@ -41,30 +45,30 @@ a {
 .text {
   padding-left: 4rem;
   -webkit-text-fill-color:transparent;
-  background-size: cover;
   top: -10rem;
   height: auto;
+  background-position-y: -10.2rem;
+  transition: background-position-y 0.8s ease-in-out;
 }
 
 /* sections */
 
-.box, .container {
-  min-height: 20rem;
-  padding-bottom: 1rem;
+.container {
+  min-height: 16rem;
 }
 
 .box {
   position: relative;
   top: -1.2rem;
-  background-size: cover;
   background-position-y: -4rem;
   transition: box-shadow 1.2s ease-in-out, margin-top 0.8s ease-in-out, height 0.8s ease-in-out;
+  padding-bottom: 1rem;
 }
 
 .container {
   margin-top: -10.2rem;
   display:flex;
-  transition: box-shadow 1.2s ease-in-out, margin-top 0.8s ease-in-out;
+  transition: margin-top 0.8s ease-in-out;
 }
 
 /* movement */
@@ -83,8 +87,7 @@ a {
   opacity: 1.0;
 }
 
-.box:hover, 
-.container:hover,
+.box:hover,
 .boxHover {
   box-shadow:2px 2px 3px rgba(10, 10, 10, 0.1);
   z-index:200;
@@ -93,9 +96,13 @@ a {
 
 .containerHover {
   margin-top: 0rem;
-  box-shadow:2px 2px 3px rgba(10, 10, 10, 0.1);
   z-index:200;
   min-height: 16rem;
+}
+
+section:hover .text,
+.textHover {
+  background-position-y: 0rem;
 }
 
 /* flexbox sections */
@@ -110,9 +117,11 @@ a {
   flex-basis: 85%;
 }
 
-/* vertical text */
+/* title text */
 
-.vertical {
+
+.title {
+
   color: #770506;
   background: #fff;
   font-size: 2rem;
@@ -129,7 +138,9 @@ a {
   box-shadow: 3px 3px 4px rgba(10, 10, 10, 0.1);
 }
 
-/* this class acts only to keep the sections separate from the vertical text, without .content, .vertical does not work */
+/* this class acts only to keep the sections separate from the title text, without .content, .title does not work */
+
+
 #content {
   height: 10rem;
 }
@@ -138,23 +149,24 @@ a {
 @media (max-width: 740px) {
   .container{ 
     flex-direction: column;
-    height:20rem;
+    height:16rem;
     margin-top: -3.2rem;
     }
 
   h2 {
     font-size: 2rem;
+    letter-spacing: -0.15rem;
   }
 
   .boxHover, .box { 
-    background-position-y: -2rem !important;
+    background-position-y: -2rem;
     top: -0.7rem;
     z-index:200;
-    height:20rem;
+    height:16rem;
   }
 
-  .vertical {
-  font-size: 1.5rem;
-  margin: -1rem -9.6rem;
+  .title {
+    font-size: 1.5rem;
+    margin: -1rem -9.6rem;
   }
 }
