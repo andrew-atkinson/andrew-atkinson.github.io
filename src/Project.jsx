@@ -29,7 +29,7 @@ export default function Project({ image, title, color, body, links }) {
                   rel='noopener noreferrer'>
                   <i key={idx} className={`fa fa-fw ${link.icon} fa-2x`} aria-hidden='true'>
                   </i>
-                  {link.name}
+                  {link.name ? link.name : null}
                 </a></p>)
               )
             }
