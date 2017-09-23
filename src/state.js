@@ -7,14 +7,7 @@ export default {
       title: 'NIMBUS, INC',
       body: [
         `A hypothetical e-commerce site selling unusual weather`,
-        `PostgreSQL maintains ‘inventory’ with Sequelize and Express,
-        Node serves the project with React,
-        Redux and Bootstrap giving a seamless user experience,
-        with OAuth and sessions providing authentication.
-        Created db schemas,
-        Express routes for products,
-        front-end through bootstrap,
-        and managed the project through git and Waffle.io`
+        `PostgreSQL maintains ‘inventory’ with Sequelize and Express, Node serves the project with React, Redux and Bootstrap giving a seamless user experience, with OAuth and sessions providing authentication. Created db schemas, Express routes for products, front-end through bootstrap, and managed the project through git and Waffle.io`
       ],
       links: [{
         href: `https://github.com/nimbusInc/cloudslanger`,
@@ -32,9 +25,7 @@ export default {
       image: 'img/2020logo.jpg',
       title: 'TWENTY-TWENTY',
       body: [
-        `Media availability can broaden our perspectives. However, with advancements in consumer targeting, news organizations have
-        increasingly directed politics. 20-20 aggregates and provides comprehensive information, showcasing content in a
-        web application and chrome extension.`
+        `Media availability can broaden our perspectives. However, with advancements in consumer targeting, news organizations have increasingly directed politics. 20-20 aggregates and provides comprehensive information, showcasing content in a web application and chrome extension.`
       ],
       links: [{
         href: `https://github.com/20-20/twentytwenty`,
@@ -60,35 +51,24 @@ export default {
       image: 'img/about.jpg',
       title: 'ABOUT',
       body: [
-        `Art educator turned software developer. As an educator I direct the MFA Studio Art program where I mentor students through
-        an intensive two-year process from conceptualization, through development and to thesis exhibition with printed monographs.
-        I also co-authored the rewrite for the Art and Design Department’s degrees. The new degrees integrate art/design-focused
-        digital technologies to update the curriculum, resulting in a relevant and competitive program to benefit students
-        entering the creative workforce today. This rewriting process revealed the exciting potential for creative problem
-        solving in software development, which brought me to javascript development and Fullstack Academy.`,
-        `Proficient: JavaScript/ES6, Node, Express, React, Redux, PostgreSQL, Git/Github, HTML, Sequelize ::
-        Knowledgeable: D3.js, CSS, Bootstrap, Mocha, Chai, Jasmine 
-        :: Some Familiarity: Sass, jQuery, Socket.io`
+        `Art educator turned software developer. As an educator I direct the MFA Studio Art program where I mentor students through an intensive two-year process from conceptualization, through development and to thesis exhibition with printed monographs. I also co-authored the rewrite for the Art and Design Department’s degrees. The new degrees integrate art/design-focused digital technologies to update the curriculum, resulting in a relevant and competitive program to benefit students entering the creative workforce today. This rewriting process revealed the exciting potential for creative problem solving in software development, which brought me to javascript development and Fullstack Academy.`,
+        `Proficient: JavaScript/ES6, Node, Express, React, Redux, PostgreSQL, Git/Github, HTML, Sequelize :: Knowledgeable: D3.js, CSS, Bootstrap, Mocha, Chai, Jasmine :: Some Familiarity: Sass, jQuery, Socket.io`
       ],
       links: [{
         href: `mailto:blind.sam@gmail.com`,
         icon: `fa-envelope`,
-        name: ``
       },
       {
         href: `https://www.linkedin.com/in/andrewpeteratkinson/`,
         icon: `fa-linkedin-square`,
-        name: ``
       },
       {
         href: `https://twitter.com/andrewatkinson`,
         icon: `fa-twitter`,
-        name: ``
       },
       {
         href: `https://www.facebook.com/andrewpeteratkinson`,
         icon: `fa-facebook`,
-        name: ``
       }
       ]
     }
