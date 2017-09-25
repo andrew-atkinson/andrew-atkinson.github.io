@@ -22,15 +22,19 @@ export default function Project({ image, title, color, body, links }) {
             }
           </div>
           <div className="link">
-            { 
+            {
               links.map((link, idx) =>
-                (<p key={idx}><a key={idx} href={link.href}
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  <i key={idx} className={`fa fa-fw ${link.icon} fa-2x`} aria-hidden='true'>
-                  </i>
-                  {link.name ? link.name : null}
-                </a></p>)
+                (<div key={idx}>
+                  <p>
+                    <a href={link.href}
+                      target='_blank'
+                      rel='noopener noreferrer'>
+                      <i className={`fa fa-fw ${link.icon} fa-2x`} aria-hidden='true'>
+                      </i>
+                      {link.name ? link.name : null}
+                    </a>
+                  </p>
+                </div>)
               )
             }
           </div>

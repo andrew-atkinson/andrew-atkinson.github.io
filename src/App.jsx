@@ -16,7 +16,8 @@ class App extends Component {
           {
            this.state.sections.map(section =>
               (
-                <Project  image={section.image}
+                <Project  key ={section.title}
+                          image={section.image}
                           color={section.color}
                           title={section.title}
                           body={section.body}
