@@ -14,7 +14,7 @@ class App extends Component {
       <div>
         <div id="content">
           {
-            this.state && this.state.sections.map(section =>
+           this.state.sections.map(section =>
               (
                 <Project  image={section.image}
                           color={section.color}
