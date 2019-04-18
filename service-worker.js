@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/andrew-atkinson.github.io/precache-manifest.bf7a437d68fd6300b42499259b6597c3.js"
+  "/andrew-atkinson.github.io/precache-manifest.dce89d5776263cae7d3efa00e9e7cb6e.js"
 );
 
 workbox.clientsClaim();
