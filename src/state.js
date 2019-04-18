@@ -35,19 +35,6 @@ export default {
       ]
     },
     {
-      image: 'img/comp-1-esja-4+5.jpg',
-      title: 'PHOTOGRAPHY',
-      body: [
-        `A site dedicated to photographic projects on Iceland and whaling, spaces underneath NYC highways, and others.`
-      ],
-      links: [{
-        href: `http://andrewatkinson.net`,
-        icon: `fa-external-link`,
-        name: `Website`
-      }
-      ]
-    },
-    {
       image: 'img/about.jpg',
       title: 'ABOUT',
       body: [
