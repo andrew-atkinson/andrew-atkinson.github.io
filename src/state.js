@@ -65,10 +65,6 @@ export default {
       {
         href: `https://twitter.com/andrewatkinson`,
         icon: `fa-twitter`,
-      },
-      {
-        href: `https://www.facebook.com/andrewpeteratkinson`,
-        icon: `fa-facebook`,
       }
       ]
     }
