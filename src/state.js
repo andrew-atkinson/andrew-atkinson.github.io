@@ -23,7 +23,7 @@ export default {
     },
     {
       image: 'img/2020logo.jpg',
-      title: 'TWENTY-TWENTY',
+      title: '20-20',
       body: [
         `Media availability can broaden our perspectives. However, with advancements in consumer targeting, news organizations have increasingly directed politics. 20-20 aggregates and provides comprehensive information, showcasing content in a web application and chrome extension.`
       ],

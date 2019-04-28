@@ -101,6 +101,13 @@
     .textHover {
         background-position-y: 0rem;
     }
+    /* reseting */
+    
+    .container:not(:hover),
+    .section:not(:hover),
+    .text:not(:hover) {
+        transition-delay: 1s;
+    }
     /* flexbox sections */
     
     .link {
@@ -135,15 +142,15 @@
     /* this class acts only to keep the sections separate from the title text, without .content, .title does not work */
     
     #content {
-        height: 10rem;
+        height: 20rem;
     }
     /* 740px width breakpoint*/
     
     @media (max-width: 740px) {
         .container {
             flex-direction: column;
-            height: 16rem;
-            margin-top: -3.2rem;
+            height: 20rem;
+            margin-top: -3rem;
         }
         h2 {
             font-size: 2rem;
@@ -164,6 +171,6 @@
             flex-direction: row;
         }
         .link p {
-            font-size: .75em;
+            font-size: 1em;
         }
     }
