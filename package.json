@@ -1,37 +1,38 @@
 {
-    "name": "andrew-atkinson-projects",
-    "version": "1.0.0",
-    "description": "A website to showcase my projects and other work.",
-    "main": "index.js",
-    "dependencies": {
-        "gh-pages": "^1.0.0",
-        "react": "^15.6.1",
-        "react-dom": "^15.6.1",
-        "react-scripts": "^2.1.8"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/andrew-atkinson/andrew-atkinson.github.io.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/andrew-atkinson/andrew-atkinson.github.io/issues"
-    },
-    "homepage": "https://andrew-atkinson.github.io/andrew-atkinson.github.io",
-    "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not ie <= 11",
-        "not op_mini all"
-    ]
+  "name": "andrew-atkinson-projects",
+  "version": "1.0.0",
+  "description": "A website to showcase my projects and other work.",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^1.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "vite": "^7.2.2"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-atkinson/andrew-atkinson.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-atkinson/andrew-atkinson.github.io/issues"
+  },
+  "homepage": "https://andrew-atkinson.github.io/andrew-atkinson.github.io",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
